@@ -1,8 +1,15 @@
-
+import Button from "./components/Button";
+import Greeting from "./components/Greeting";
+import Counter from "./components/Counter";
 function App() {
   return (
     <div>
-      Hello World!
+      <Greeting />
+      <Button />
+      <Button />
+      <Button />
+      <Button />
+      <Counter />
     </div>
   );
 }
