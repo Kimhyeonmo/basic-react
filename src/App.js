@@ -1,14 +1,17 @@
-import Button from "./components/Button";
-import Greeting from "./components/Greeting";
-import Counter from "./components/Counter";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Info from './pages/Info';
+
 function App() {
-  const name = "김현모"; // 원하는 이름으로 변경하세요.
-  const handleClick = () => {
-    console.log("버튼 클릭됨");
-  };
   return (
-    <BrowserRouter>  </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/info" element={<Info />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;

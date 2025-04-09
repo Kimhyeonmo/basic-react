@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function Info() {
+const Info = () => {
+    const navigate = useNavigate();
+
     return (
-        <div>Info
-            <button type="button">Home 페이지로 이동</button>
+        <div>
+            <button type="button" onClick={() => navigate("/")}>
+                Home
+            </button>
         </div>
-    )
-}
+    );
+};
+
+export default Info;

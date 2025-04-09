@@ -3,7 +3,6 @@ import React from 'react';
 //Button 이름이다
 const Greating = ({ userName }) => {
     // 자바스크립트 코드
-    const name = "hyeonmo";
     const className = ['btn', 'btn-primary'];
     // html 코드
     return (
