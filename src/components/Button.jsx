@@ -1,10 +1,16 @@
 import React from 'react';
 
 //Button 이름이다
-const Button = () => {
+const Button = ({ text, onButtonClick }) => {
+
+    const handleClick = () => {
+        console.log(`${text} 버튼 클릭됨`);
+        onButtonClick();
+    }
+
     return (
         <div className="button-area">
-            <button type="button" className="btn btn-primary">Click Me</button>
+            <button type="button" onClick={handleClick}>{text}</button>
         </div>
     )
 }
